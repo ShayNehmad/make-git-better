@@ -29,6 +29,7 @@ A planning document. **Don't look at this if you plan to do the workshop!**
 1. ⏹ git diff
 1. ⏹ git branch
 1. ⏹ git tag
+1. ✅ git remote
 
 ## Stages
 
@@ -91,4 +92,12 @@ The next challenge is two-fold: the 🚩 is the tag 2 commits before this branch
 
 ### 8 `nicenist-golp-goback`
 
-End. 🍰
+In this branch there is a `dontreadme.sh` script which Travis runs and fails.
+
+In a different fork of the repo, a file exists which causes this script to pass. We need to add that repo as a remote (`git remote add https://github.com/OtherUser/make-git-better remote2`) and merge changes from `remote2/nicenist-golp-goback` branch into `nicenist-golp-goback`.
+
+Travis will give 🚩 if the script passes in the PR. 
+
+### 9 `premove-refile-misnomer`
+
+End, `🍰 is a li3` etc.

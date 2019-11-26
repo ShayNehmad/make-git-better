@@ -4,6 +4,7 @@ import os
 
 def main():
     print("I'm the branch name generator.\nHere are some names for you:\n")
+    # Think about changing this to movie names from imdb database
     words = load_words()
     print(len(words))
 
