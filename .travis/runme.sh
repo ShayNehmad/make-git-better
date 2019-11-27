@@ -39,7 +39,6 @@ echo "Testing ENCOM basic access script."
 # Check if the script itself ran successfully.
 python ENCOM/login.py
 login_exit_code=$?
-echo "Logic exit code: " $login_exit_code
 if [ $login_exit_code -ne 0 ];
 then bad "Login failed...";
 fi
