@@ -20,7 +20,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
 ## Directions
 
 - Have fun :)
-- Don't look at any hidden directories in this repo (unless you're directed to do so). **SPECIFICALLY DON'T LOOK AT THE `.travis` or `.management` DIRECTORIES. THIS WILL RUIN THE CHALLENGE FOR YOU.**
+- Don't look at any hidden files or directories in this repo (unless you're directed to do so). **Specifically, don't look at the `.travis` or `.management` directories or the `.travis.yml` file. THIS WILL RUIN THE CHALLENGE FOR YOU.**
 - This challenge will not require brute-forcing to solve - the solution, once you got it, should be clear.
 - You are encourged to use any tool to solve the challenge. However, CLI is preferred to make sure you understand all the commands - save the GUI for day-to-day work.
 
@@ -36,7 +36,7 @@ Your first challange is to:
 
 1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 2. Clone it to your local development machine
-3. Checkout the `start_here` branch 
+3. Checkout the `start_here` branch
 4. Read me again to unlock the next stage 😉
 
 ### Stage 2

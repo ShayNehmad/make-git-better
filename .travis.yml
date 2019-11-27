@@ -9,6 +9,5 @@ install:
 os: linux
 
 script:
-  - git log --oneline -n 5
   - chmod +x .travis/runme.sh
   - .travis/runme.sh
