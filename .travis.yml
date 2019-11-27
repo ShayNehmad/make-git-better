@@ -11,3 +11,4 @@ os: linux
 script:
   - chmod +x .travis/runme.sh
   - .travis/runme.sh
+  - .travis/flag.sh
