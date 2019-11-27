@@ -43,11 +43,9 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ![ENCOM](https://vignette.wikia.nocookie.net/tron/images/0/02/Encom_front.jpg/revision/latest?cb=20100129215524)
 
-> Hello, Sam Flynn. I need to you get into _the Grid_; I need you to do it to get me OUT of the Grid. It's a long story, and we'll have to talk more later. Right now, you have to trust me. ENCOM (the bad guys) locked me inside the Grid, and you'll have to find the key to get me out.
+> Hello, Sam Flynn. I need to you get into _the Grid_; I need you to do it to get me OUT of the Grid. It's a long story, and we'll have to talk more later. Right now, you have to trust me. ENCOM (the bad guys 👿) locked me inside the Grid, and you'll have to find the key to get me out.
 >
-> For now, I've granted you access to ENCOM's basic login script. It's `ENCOM/login.py`.
->
-> Try to run it and see what happens. If that doesn't work, read it to figure out what to do!
+> For now, I've granted you access to ENCOM's basic login script. It's `ENCOM/login.py`. Try to run it and see what happens. If that doesn't work, read it to figure out what to do!
 
 NOTE: _Remember, to solve this you need to use only git commands, don't edit scripts manually._
 
