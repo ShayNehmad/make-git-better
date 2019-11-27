@@ -6,6 +6,8 @@ python:
 install:
   - pip install -r .travis/requirements.txt
 
+os: linux
+
 script:
   - git log --oneline -n 5
   - chmod +x .travis/runme.sh
