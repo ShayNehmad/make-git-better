@@ -38,7 +38,7 @@ echo "Testing ENCOM basic access script."
 
 # Check if the script itself ran successfully.
 python ENCOM/login.py
-if [ ! $? ];
+if [ $? ];
 then bad "Login failed...";
 fi
 
