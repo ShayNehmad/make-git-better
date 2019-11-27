@@ -96,7 +96,7 @@ In this branch there is a `dontreadme.sh` script which Travis runs and fails.
 
 In a different fork of the repo, a file exists which causes this script to pass. We need to add that repo as a remote (`git remote add https://github.com/OtherUser/make-git-better remote2`) and merge changes from `remote2/nicenist-golp-goback` branch into `nicenist-golp-goback`.
 
-Travis will give 🚩 if the script passes in the PR. 
+Travis will give 🚩 if the script passes in the PR.
 
 ### 9 `premove-refile-misnomer`
 
