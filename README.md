@@ -15,6 +15,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
   - [Stages](#stages)
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
+      - [What if I f-ed it up](#what-if-i-f-ed-it-up)
   - [License](#license)
 
 ## Directions
@@ -32,16 +33,21 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 1
 
-Your first challange is to:
-
-1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone it to your local development machine
-3. Checkout the `start_here` branch
-4. Read me again to unlock the next stage 😉
+🚩
 
 ### Stage 2
 
-_WIP in the `start_here` branch_...
+Your challange:
+
+1. Add 2 files to the root of the repo: `alice.txt` and `bob.txt`.
+2. Commit your changes (should be only one commit!)
+3. Push your changes to your remote repo.
+4. Create a pull request from your_repo/start-here to ShayNehmad/start-here.
+5. Go get your flag from TravisCI, which will test your branch for you.
+
+#### What if I f-ed it up
+
+Good! That's a good way to learn. You'll need to figure out how to return things to their original state and start over :)
 
 ## License
 
