@@ -1,5 +1,6 @@
 ### LICENSED TO ENCOM
 ### COPYRIGHT 1989
+### AUTHOR: Ed Dillinger
 import sys
 
 def main():
