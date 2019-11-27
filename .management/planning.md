@@ -1,6 +1,6 @@
 # What is this
 
-A planning document. **Don't look at this if you plan to do the workshop!**   
+A planning document. **Don't look at this if you plan to do the workshop!**
 
 ## What do we assume
 
@@ -43,7 +43,7 @@ Points to the readme which covers fork (1), clone (2) and checkout branch (2). P
 
 Covers add (4), commit (5), push (6) and pull requests (7). If you add the 2 required files in a single commit you'll get a check and the next 🚩 from Travis's output.
 
-> Question: All PRs are to the original repo same branch? 
+> Question: All PRs are to the original repo same branch?
 
 ### 3 `rollinia-flints-lut`
 
