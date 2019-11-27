@@ -47,10 +47,10 @@ fi
 # Check if the correct parent is a merge commit
 git fetch --tags -q
 rollinia_commit_hash=$( git log -1 --format=format:"%h" rollinia-flints-lut-tag )
-parent_1=$( git log -1 | grep merge | awk '{ print $2 }' )
-parent_1_parents_amount=$( git cat-file -p $parent_1 | grep parent | wc -l )
-parent_2=$( git log -1 | grep merge | awk '{ print $3 }' )
-parent_2_parents_amount=$( git cat-file -p $parent_2 | grep parent | wc -l )
+parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
+parent_1_parents_amount=$( git cat-file -p ${parent_1} | grep parent | wc -l )
+parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
+parent_2_parents_amount=$( git cat-file -p ${parent_2} | grep parent | wc -l )
 
 echo "p1: " $parent_1 
 echo "p1 #: " $parent_1_parents_amount
@@ -60,10 +60,9 @@ echo "hash: " $rollinia_commit_hash
 
 if [ parent_1 != rollinia_commit_hash && parent_1_parents_amount != 2 ];
 then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-fi
-
-if [ parent_2 != rollinia_commit_hash && parent_2_parents_amount != 2 ];
+elif [ parent_2 != rollinia_commit_hash && parent_2_parents_amount != 2 ];
 then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
+else bad "Couldn't find merge commit!"
 fi
 
 flag "ethers-kalongs-asylum"
