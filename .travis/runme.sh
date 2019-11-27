@@ -58,9 +58,9 @@ echo "p2: " $parent_2
 echo "p2 #: " $parent_2_parents_amount
 echo "hash: " $rollinia_commit_hash
 
-if [ ( parent_1 != rollinia_commit_hash ) -a ( parent_1_parents_amount != 2 ) ];
+if [ ( $parent_1 != rollinia_commit_hash ) -a ( $parent_1_parents_amount != 2 ) ];
 then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-elif [ ( parent_2 != rollinia_commit_hash ) -a ( parent_2_parents_amount != 2 ) ];
+elif [ ( $parent_2 != rollinia_commit_hash ) -a ( $parent_2_parents_amount != 2 ) ];
 then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 else bad "Couldn't find merge commit!"
 fi
