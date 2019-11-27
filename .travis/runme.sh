@@ -38,11 +38,14 @@ echo "Testing ENCOM basic access script."
 
 # Check if the script itself ran successfully.
 python ENCOM/login.py
-if [ $? ];
+login_exit_code=$?
+echo "Logic exit code: " $login_exit_code
+if [ $login_exit_code -ne 0 ];
 then bad "Login failed...";
 fi
 
 # Check if the correct parent is a merge commit
+git fetch --tags -q
 rollinia_commit_hash=$( git log -1 --format=format:"%h" rollinia-flints-lut-tag )
 parent_1=$( git log -1 | grep merge | awk '{ print $2 }' )
 parent_1_parents_amount=$( git cat-file -p $parent_1 | grep parent | wc -l )
