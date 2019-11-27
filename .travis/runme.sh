@@ -46,12 +46,12 @@ then bad "Bob is missing! Try again.";
 fi
 
 
-git fetch --tags > /dev/null  # get all the tags but don't show them to the user
+git fetch --tags --quiet  # get all the tags but don't show them to the user
 
-# Check how many commits the user needed - should be one!
+# Check how many commits the user needed - should be two (the user commit + merge commit)!
 commit_amount=$( git log start-here-tag.. --oneline | wc -l )
-if [ $commit_amount -ne 1 ];
-then bad "The files should have been added in a single commit, but I've found ${commit_amount} commits in the log. To reset and try again, delete the local start-here branch, checkout the original start-here branch again and try again.";
+if [ $commit_amount -ne 2 ];
+then bad "The files should have been added in a single commit, but I've found ${commit_amount} commits (including the merge commit that the pull request is trying to do) in the log. To reset and try again, delete the local start-here branch, checkout the original start-here branch again and try again.";
 fi
 
 # Everything's OK
