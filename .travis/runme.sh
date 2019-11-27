@@ -50,11 +50,11 @@ fi
 # then bad "The files should have been added in a single commit, but I've found ${commit_amount} commits in the log. To reset and try again, delete the local start-here branch and checkout the original start-here branch again.";
 # fi
 
-# Check branch name
-branch_name=$( git branch | grep "\*" | awk '{ print $2 }' )
-if [ $branch_name != "start-here" ];
-then bad "Branch name isn't start-here but rather ${branch_name}";
-fi
+# Check branch name?
+# branch_name=$( git branch -v -a | grep $(git log --pretty=format:'%h' -n 1) | awk '{ print $2 }' )
+# if [[ $branch_name != *"start-here-test"* ]];
+# then bad "Branch name isn't start-here but rather ${branch_name}";
+# fi
 
 # Everything's OK
 flag rollinia-flints-lut
