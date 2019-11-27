@@ -34,6 +34,34 @@ function bad {
 }
 
 printaline
-echo "Looks like nothing happened yet!"
-printaline
+echo "Testing ENCOM basic access script."
+
+# Check if the script itself ran successfully.
+python ENCOM/login.py
+if [ ! $? ];
+then bad "Login failed...";
+fi
+
+# Check if the correct parent is a merge commit
+rollinia_commit_hash=$( git log -1 --format=format:"%h" rollinia-flints-lut-tag )
+parent_1=$( git log -1 | grep merge | awk '{ print $2 }' )
+parent_1_parents_amount=$( git cat-file -p $parent_1 | grep parent | wc -l )
+parent_2=$( git log -1 | grep merge | awk '{ print $3 }' )
+parent_2_parents_amount=$( git cat-file -p $parent_2 | grep parent | wc -l )
+
+echo $parent_1 
+echo $parent_1_parents_amount
+echo $parent_2
+echo $parent_2_parents_amount
+echo $rollinia_commit_hash
+
+if [ parent_1 != rollinia_commit_hash && parent_1_parents_amount != 2 ];
+then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
+fi
+
+if [ parent_2 != rollinia_commit_hash && parent_2_parents_amount != 2 ];
+then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
+fi
+
+flag "ethers-kalongs-asylum"
 exit 0
