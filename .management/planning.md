@@ -30,6 +30,10 @@ A planning document. **Don't look at this if you plan to do the workshop!**
 1. ⏹ git branch
 1. ⏹ git tag
 1. ✅ git remote
+1. ⏹ Revert a specific file
+1. ⏹ Edit commit messages that have already been pushed (with push -f)
+1. ⏹ Delete a branch locally and remotely
+1. ⏹ Working directory VS Staging area (using a script that adds stuff maybe?)
 
 ## Stages
 
