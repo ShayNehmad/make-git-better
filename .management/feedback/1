@@ -1,0 +1,11 @@
+Problems:
+* Don't know how to get to the TravisCI build logs - give instructions
+* If the original repo is changed the forks that are midway are basically f-ed (branch games won't work). So need
+a nuclear option for re-creating the fork (delete all local branches, checkout `start-here`? or delete f-ed branches 
+and recheckout the current stage. Can add a `local_stage` file under management which might even help for other things)
+ * git remote -v
+ * git remote add https://github.com/ShayNehmad/make-git-better upstream
+ * git fetch upstream 
+ * delete f-ed local branches 
+ * git checkout -b f-ed-branch upstream/f-ed-branch
+* Which branch to create a pull request to? Make it clearer. Should be the same stage probably. 
