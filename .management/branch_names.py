@@ -1,31 +1,41 @@
-import os
+import argparse
+import pathlib
 import random
 
 import git
 
-SET_LENGTH = 10
-RANDOM_WORDS_PER_NAME = 3
-MINIMUM_WORDS_LENGTH = 2
-MAXIMUM_WORDS_LENGTH = 9
+
+def parse_arguments():
+    parser = argparse.ArgumentParser("Generate random branch names and push them to a repo.")
+    parser.add_argument('--min', default=2, type=int,
+                        help="Minimum word length per word in branch name. Non-inclusive.")
+    parser.add_argument('--max', default=9, type=int,
+                        help="Maximum word length per word in branch name. Non-inclusive.")
+    parser.add_argument('--words', default=3, type=int, help="Amount of random words per branch name.")
+    parser.add_argument('--branches', default=10, type=int, help="Amount of branches to push.")
+    return parser.parse_args()
 
 
 def main():
+    args = parse_arguments()
+
     print("I'm the branch name generator.\nHere are some names for you:\n")
     words = load_words()
     print(len(words))
 
     # Filter to mostly normal pronounceable words
-    words = set(filter(lambda x: MINIMUM_WORDS_LENGTH < len(x) < MAXIMUM_WORDS_LENGTH, words))
+    words = set(filter(lambda x: args.min < len(x) < args.max, words))
 
     print(len(words))
-    names_set = generate_names_set(words)
+    names_set = generate_names_set(words, args.branches, args.words)
     print(names_set)
 
-    repo_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    repo_dir = pathlib.Path(__file__).resolve().parent.parent
     repo = git.Repo(repo_dir)
+    management_dir = repo_dir / '.management'
 
     for branch_name in names_set:
-        create_and_push_branch(repo, branch_name)
+        create_and_push_branch(repo, branch_name, management_dir)
         print("Pushed {0}, checking out dev".format(branch_name))
         repo.git.checkout('dev')
 
@@ -35,19 +45,21 @@ def load_words():
     Loads words from english-words repo.
     :return: Set of valid words.
     """
-    with open(os.path.join('english-words', 'words_alpha.txt')) as word_file:
+    words_repo_path = pathlib.PurePath(__file__).parent
+    words_repo_path = str(words_repo_path / 'english-words' / 'words_alpha.txt')
+    with open(words_repo_path, 'r') as word_file:
         valid_words = set(word_file.read().split())
 
     return valid_words
 
 
-def generate_names_set(words, set_length=SET_LENGTH, random_words_per_name=RANDOM_WORDS_PER_NAME):
+def generate_names_set(words, set_length, random_words_per_name):
     """
     Generates set of branch names.
     :param words: Set of words to sample from.
     :param set_length: Length of returned set.
     :param random_words_per_name: Amount of random words per branch name.
-    :return:
+    :return: Set of branch names.
     """
     names_set = []
     i = 0
@@ -60,17 +72,16 @@ def generate_names_set(words, set_length=SET_LENGTH, random_words_per_name=RANDO
     return set(names_set)
 
 
-def create_and_push_branch(repo, branch_name):
+def create_and_push_branch(repo, branch_name, file_to_save_dir):
     """
-    Creates a branch with the given name,
+    Creates a branch with the given name and pushes it to the remote repo.
     :param repo: Git repo object.
     :param branch_name: Name of branch to create.
-    :return:
+    :param file_to_save_path: Path of dir of file to save.
     """
-
     git_cmd = repo.git
     git_cmd.checkout('HEAD', b=branch_name)
-    file_path = os.path.join(repo.working_dir, "{0}.txt".format(branch_name))
+    file_path = str(file_to_save_dir / "{0}.txt".format(branch_name))
 
     with open(file_path, 'w') as fd:
         fd.write(branch_name)
@@ -82,4 +93,3 @@ def create_and_push_branch(repo, branch_name):
 
 if __name__ == "__main__":
     main()
-
