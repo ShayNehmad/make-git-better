@@ -43,11 +43,21 @@ The stages are one after another and the flag for each stage will be the next br
 
 Points to the readme which covers fork (1), clone (2) and checkout branch (2). Points to the next stage.
 
+#### Status
+
+* Happy flow ✅
+* Edge cases ✅ (There are none)
+
 ### 2 `start-here`
 
 Covers add (4), commit (5), push (6) and pull requests (7). If you add the 2 required files in a single commit you'll get a check and the next 🚩 from Travis's output.
 
 > Question: All PRs are to the original repo same branch?
+
+#### Status
+
+* Happy flow ✅
+* Edge cases ⏹ Didn't think of any.
 
 ### 3 `rollinia-flints-lut`
 
@@ -60,6 +70,11 @@ What's the test to pass?
 * Call the script itself
 
 The script itself just return 0 (maybe prints something cute). Travis runs it and if it passes - 🚩.
+
+#### Status
+
+* Happy flow ✅
+* Edge cases ⏹ Pushing not a merge, lots of commits in the way.
 
 ### 4 `ethers-kalongs-asylum`
 
