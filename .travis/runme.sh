@@ -61,7 +61,7 @@ git log --oneline --graph --decorate -n 7
 
 if [ $parent_1 != $rollinia_commit_hash -a $parent_1_parents_amount -eq 1 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-elif [ $parent_2 != $rollinia_commit_hash -a $parent_2_parents_amount -eq 1 ) ];
+elif [ $parent_2 != $rollinia_commit_hash -a $parent_2_parents_amount -eq 1 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
 
