@@ -44,7 +44,7 @@ then bad "Login failed...";
 fi
 
 # Check if the correct parent is a merge commit
-git fetch --tags -q
+git fetch --tags
 rollinia_commit_hash=$( git log -1 --format=format:"%h" rollinia-flints-lut-tag )
 parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
 parent_1_parents_amount=$( git cat-file -p ${parent_1} | grep parent | wc -l )
