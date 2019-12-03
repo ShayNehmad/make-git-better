@@ -51,13 +51,13 @@ parent_1_parents_amount=$( git cat-file -p ${parent_1} | grep parent | wc -l )
 parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
 parent_2_parents_amount=$( git cat-file -p ${parent_2} | grep parent | wc -l )
 
-echo "p1: " $parent_1 
-echo "p1 #: " $parent_1_parents_amount
-echo "p2: " $parent_2
-echo "p2 #: " $parent_2_parents_amount
-echo "hash: " $rollinia_commit_hash
+echo "parent 1 hash: " $parent_1 
+echo "parent 1 # of parents: " $parent_1_parents_amount
+echo "parent 2 hash: " $parent_2
+echo "parent 2 # of parents: " $parent_2_parents_amount
 
-git log --oneline --graph --decorate -n 7
+echo "Let's look at the log..."
+git log --oneline --graph --decorate -n 4
 
 if [ $parent_1 != $rollinia_commit_hash -a $parent_1_parents_amount -eq 1 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
