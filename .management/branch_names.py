@@ -18,17 +18,13 @@ def parse_arguments():
 
 def main():
     args = parse_arguments()
-
-    print("I'm the branch name generator.\nHere are some names for you:\n")
     words = load_words()
-    print(len(words))
 
     # Filter to mostly normal pronounceable words
     words = set(filter(lambda x: args.min < len(x) < args.max, words))
 
-    print(len(words))
     names_set = generate_names_set(words, args.branches, args.words)
-    print(names_set)
+    print("Chosen branch names: ", names_set)
 
     repo_dir = pathlib.Path(__file__).resolve().parent.parent
     repo = git.Repo(repo_dir)
