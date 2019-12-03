@@ -44,7 +44,7 @@ then bad "Login failed...";
 fi
 
 # Check if the correct parent is a merge commit
-git fetch --tags
+git fetch --tags -q
 rollinia_commit_hash=$( git log -1 --format=format:"%h" rollinia-flints-lut-tag )
 parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
 parent_1_parents_amount=$( git cat-file -p ${parent_1} | grep parent | wc -l )
@@ -57,12 +57,12 @@ echo "p2: " $parent_2
 echo "p2 #: " $parent_2_parents_amount
 echo "hash: " $rollinia_commit_hash
 
-git log --oneline --graph --decorate
+git log --oneline --graph --decorate -n 7
 
-if [ ( $parent_1 != $rollinia_commit_hash ) -a ( $parent_1_parents_amount != 2 ) ];
-then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-elif [ ( $parent_2 != $rollinia_commit_hash ) -a ( $parent_2_parents_amount != 2 ) ];
-then bad "The commit isn't a merge commit! You must solve this stage using a merge. Try again.";
+if [ $parent_1 != $rollinia_commit_hash -a $parent_1_parents_amount -eq 1 ];
+then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
+elif [ $parent_2 != $rollinia_commit_hash -a $parent_2_parents_amount -eq 1 ) ];
+then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
 
 flag "ethers-kalongs-asylum"
