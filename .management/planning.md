@@ -84,6 +84,11 @@ The `src/script.sh` has grown bigger in this branch and we want to merge changes
 
 Tests are the same as last time 🚩
 
+#### Status
+
+* Happy flow ✅
+* Edge cases ⏹ Pushing not a merge, lots of commits in the way.
+
 ### 5 `sylvanly-narrower-oxboy`
 
 `sylvanly-narrower-oxboy` is our feature branch and `sealed-updrink-kashyapa` is our master branch.
