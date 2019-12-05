@@ -6,8 +6,9 @@ def check_2fa_login(password):
     twofa_password = os.environ["2FA"]
 
     # TODO here we'll check the 2FA password.
+    # We need to check the 2FA password from the environment variable against the user-provided password. Also, I heard that using hashes is secure - let's do that!
     # TODO Merge me into ethers-kalongs-asylum
     import hashlib
     n = hashlib.sha512()
     n.update(password.encode())
-    return 1 == n.hexdigest()
+    return "PUT_HASH_OF_2FA_PASSWORD_HERE" == n.hexdigest()
