@@ -9,5 +9,5 @@ def check_2fa_login(password):
     # TODO Need to merge the rest of the work over from `grubbery-unopenly-unhushed`. But I'm just so lazy... 💤
     import hashlib
     m = hashlib.sha512()
-    m.update(twofa_password)
+    m.update(twofa_password.encode())
     return m.hexdigest() == 2
