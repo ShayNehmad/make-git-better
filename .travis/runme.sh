@@ -78,17 +78,19 @@ fi
 
 echo "User's commit was ${users_commit_hash}"
 
-distance_to_sylvanly=$( git log ${users_commit_hash}..${sylvanly_commit_hash} --oneline | wc -l )
-distance_to_sealed=$( git log ${users_commit_hash}..${sealed_commit_hash} --oneline | wc -l )
+distance_to_sylvanly=$( git log ${sylvanly_commit_hash}..${users_commit_hash} --oneline | wc -l )
+distance_to_sealed=$( git log ${sealed_commit_hash}..${users_commit_hash} --oneline | wc -l )
 
 echo "Distance to sylvanly: ${distance_to_sylvanly}"
 echo "Distance to sealed: ${distance_to_sealed}"
 
 if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our history
+then
     if [[ $distance_to_sylvanly -eq 1 ]]
     then
         echo "CASTOR SAYS: This looks like the first attempt."
         if [[ $castor -eq 66 ]]
+        then
             bad "CASTOR SAYS: 66 is a nice offer... But it's not enough! Please offer me 77 instead."
         else 
             bad "CASTOR SAYS: Please offer me 66, and make it the FIRST offer (in the 1st commit)!"
@@ -96,6 +98,7 @@ if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our h
     elif [[ $distance_to_sylvanly -eq 2 ]]
         echo "CASTOR SAYS: This looks like the second attempt."
         if [[ $castor -eq 77 ]]
+        then
             bad "CASTOR SAYS: I see you offer me 77. I changed my mind again! Please REVERT the last commit and offer me 66 again!"
         else 
             bad "CASTOR SAYS: Please offer me 77, and make it the SECOND offer (in the 2nd commit)!"
@@ -103,6 +106,7 @@ if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our h
     elif [[ $distance_to_sylvanly -eq 2 ]]
         echo "CASTOR SAYS: This looks like the third attempt."
         if [[ $castor -eq 66 ]]
+        then
             echo "CASTOR SAYS: I see you offer me 66 again! That's great! Now just let me check one more thing..."
             bad "CASTOR SAYS: Your offer is good, but please REBASE your offer on sealed-updrink-kashyapa! 
             I can't offer you the flag while we're working on the sylvanly-narrower-oxboy branch, that's no way to do business. This branch is watched by ENCOM!"
@@ -112,9 +116,11 @@ if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our h
 else  # After rebase or merge, since sealed is in our history
     echo "CASTOR SAYS: Looks like we're after the rebase."
     if [[ $( echo_parents_amount ${users_commit_hash} ) -eq 2 ]]
+    then
         bad "CASTOR SAYS: Looks to me like you've used MERGE, and not REBASE! Try again and use rebase this time!"
     else
         if [[ $castor -eq 66 ]]
+        then
             echo "CASTOR SAYS: 66 seems like a good offer, and you rebased correctly on sealed-updrink-kashyapa. Fine, I'll tell you the next step. Just don't tell Clu about this..."
             flag "flamenco-wens-violer"
             exit 0
