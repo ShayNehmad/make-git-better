@@ -17,6 +17,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 2](#stage-2)
     - [Stage 3](#stage-3)
     - [Stage 4](#stage-4)
+    - [Stage 5](#stage-5)
   - [License](#license)
 
 ## Directions
@@ -46,19 +47,21 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 4
 
-![Bad guy](https://media.giphy.com/media/RDxVJyQalYa2I/giphy.gif)
+🚩
 
-> `WELCOME TO ENCOM NETWORK.`
->
-> `CLU HAS BEEN DISPACTHED TO YOUR LOCATION FOR IMMEDIATE DESTRUCTION UNTIL SECONDARY LOGIN SCRIPT IS EXECUTED SUCCESSFULLY`
+### Stage 5
+
+![End of Club](https://i.pinimg.com/originals/62/31/af/6231af2773ebe609d7f002ad65c320df.jpg)
+
+> `Oh, I see you've successfully logged in. Welcome to my club - the *End of Line* club! Please enjoy a drink. My name is Castor, the owner of this club. For the right price, I can point you in the right direction... 😉`
 >
 > ---
 >
-> Sam. Thought I lost you there for a second. Good job so far, but we don't have much time to waste. CLU is talking about ENCOM's secondary login script (under `ENCOM/2fa.py`).
+> Good work, Sam! You've logged into the system, and Clu is off our track... For now. 😟
 >
-> You know what to do. Good luck.
-
-NOTE: _Remember, to solve this you need to use only git commands, don't edit scripts manually._
+> Now you have to convince Castor to reveal where's the next step. All we need is for the `ENCOM/convince_castor.sh` script to offer the right price. The problem with Castor is that he's very fickle. He likes to _revert_ his opinion all the time. You'll have to see what he tells you to do...
+>
+> Start by offering him *66*. Set that variable in `ENCOM/convince_castor.sh`), create a pull request, and see what he tells you.
 
 ## License
 
