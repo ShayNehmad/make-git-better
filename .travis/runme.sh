@@ -41,18 +41,6 @@ function echo_parents_amount {
     echo $( git cat-file -p $1 | grep parent | wc -l )
 }
 
-function is_merge_commit {
-    echo "in is merge commit"
-    if [[ $( echo_parents_amount $1 ) -eq 2 ]]
-    then
-        echo "is merge commit"
-        true
-    else
-        echo "isn't merge commit"
-        false
-    fi
-}
-
 printaline
 echo "Testing ENCOM basic access script."
 
@@ -71,18 +59,19 @@ parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
 
 echo "parent 1 hash: " $parent_1
 echo "parent 2 hash: " $parent_2
+echo "ethers hash: " $ethers_commit_hash
 
 echo "Let's look at the log..."
 git log --oneline --graph --decorate -n 4
 
 echo "checking p1"
-if [[ $parent_1 != $ethers_commit_hash ]] && [[ $( is_merge_commit $parent_1 ) ]]
+if [[ $parent_1 != $ethers_commit_hash -a $(echo_parents_amount $parent_1) -eq 1 ]]
 then 
     bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again."
 fi
 
 echo "checking p2"
-if [[ $parent_2 != $ethers_commit_hash ]] && [[ $( is_merge_commit $parent_2 ) ]]
+if [[ $parent_2 != $ethers_commit_hash -a $(echo_parents_amount $parent_1) -eq 1 ]]
 then 
     bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
