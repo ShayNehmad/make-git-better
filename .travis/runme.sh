@@ -51,8 +51,9 @@ then bad "Login failed...";
 fi
 
 # Try to "convince castor"
-chmod +x ENCOM/convince_castor.sh | echo "Tried to convince castor."
-castor=${PIPESTATUS[0]}
+chmod +x ENCOM/convince_castor.sh 
+ENCOM/convince_castor.sh
+typeset -i castor=$(cat offer)
 
 echo "Trying to convince castor with ${castor}"
 
@@ -96,6 +97,7 @@ then
             bad "CASTOR SAYS: Please offer me 66, and make it the FIRST offer (in the 1st commit)!"
         fi
     elif [[ $distance_to_sylvanly -eq 2 ]]
+    then
         echo "CASTOR SAYS: This looks like the second attempt."
         if [[ $castor -eq 77 ]]
         then
@@ -104,6 +106,7 @@ then
             bad "CASTOR SAYS: Please offer me 77, and make it the SECOND offer (in the 2nd commit)!"
         fi
     elif [[ $distance_to_sylvanly -eq 2 ]]
+    then
         echo "CASTOR SAYS: This looks like the third attempt."
         if [[ $castor -eq 66 ]]
         then
