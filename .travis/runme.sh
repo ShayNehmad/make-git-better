@@ -79,13 +79,11 @@ fi
 
 echo "User's commit was ${users_commit_hash}"
 
-distance_to_sylvanly=$( git log ${sylvanly_commit_hash}..${users_commit_hash} --oneline | wc -l )
-distance_to_sealed=$( git log ${sealed_commit_hash}..${users_commit_hash} --oneline | wc -l )
+distance_to_sylvanly=$( git rev-list --count ${sylvanly_commit_hash}..${users_commit_hash} --oneline | wc -l )
 
 echo "Distance to sylvanly: ${distance_to_sylvanly}"
-echo "Distance to sealed: ${distance_to_sealed}"
 
-if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our history
+if [[ -z $( git log --oneline --decorate | grep ${sealed_commit_hash} ) ]] # Not after rebase since sealed isn't in our history
 then
     if [[ $distance_to_sylvanly -eq 1 ]]
     then
