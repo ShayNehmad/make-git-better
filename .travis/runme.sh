@@ -103,14 +103,13 @@ then
         else 
             bad "CASTOR SAYS: Please offer me 77, and make it the SECOND offer (in the 2nd commit)!"
         fi
-    elif [[ $distance_to_sylvanly -eq 2 ]]
+    elif [[ $distance_to_sylvanly -eq 3 ]]
     then
         echo "CASTOR SAYS: This looks like the third attempt."
         if [[ $castor -eq 66 ]]
         then
             echo "CASTOR SAYS: I see you offer me 66 again! That's great! Now just let me check one more thing..."
-            bad "CASTOR SAYS: Your offer is good, but please REBASE your offer on sealed-updrink-kashyapa! 
-            I can't offer you the flag while we're working on the sylvanly-narrower-oxboy branch, that's no way to do business. This branch is watched by ENCOM!"
+            bad "CASTOR SAYS: Your offer is good, but please REBASE your offer on sealed-updrink-kashyapa! I can't offer you the flag while we're working on the sylvanly-narrower-oxboy branch, that's no way to do business. This branch is watched by ENCOM!"
         else 
             bad "CASTOR SAYS: Please offer me 66, and make it the THIRD offer (in the 3rd commit)!"
         fi
