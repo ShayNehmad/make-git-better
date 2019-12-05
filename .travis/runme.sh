@@ -43,7 +43,7 @@ function echo_parents_amount {
 
 function is_merge_commit {
     echo "in is merge commit"
-    if [[ echo_parents_amount $1 -eq 2 ]]
+    if [[ $( echo_parents_amount $1 ) -eq 2 ]]
     then
         echo "is merge commit"
         true
@@ -76,13 +76,13 @@ echo "Let's look at the log..."
 git log --oneline --graph --decorate -n 4
 
 echo "checking p1"
-if [[ $parent_1 != $ethers_commit_hash ]] && [[ is_merge_commit $parent_1 ]]
+if [[ $parent_1 != $ethers_commit_hash ]] && [[ $( is_merge_commit $parent_1 ) ]]
 then 
     bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again."
 fi
 
 echo "checking p2"
-if [[ $parent_2 != $ethers_commit_hash ]] && [[ is_merge_commit $parent_2 ]]
+if [[ $parent_2 != $ethers_commit_hash ]] && [[ $( is_merge_commit $parent_2 ) ]]
 then 
     bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
