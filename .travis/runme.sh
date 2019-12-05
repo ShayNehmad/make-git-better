@@ -52,7 +52,9 @@ fi
 
 # Try to "convince castor"
 chmod +x ENCOM/convince_castor.sh | echo "Tried to convince castor."
-$castor=${PIPESTATUS[0]}
+castor=${PIPESTATUS[0]}
+
+echo "Trying to convince castor with ${castor}"
 
 git fetch --tags -q
 sylvanly_commit_hash=$( echo_tag_commit_hash sylvanly-narrower-oxboy-tag )
@@ -60,6 +62,9 @@ sealed_commit_hash=$( echo_tag_commit_hash sealed-updrink-kashyapa-tag )
 
 parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
 parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
+
+echo "Let's look at the log..."
+git log --oneline --graph -n 10 --decorate
 
 echo "parent 1 hash: " $parent_1
 echo "parent 2 hash: " $parent_2
@@ -71,8 +76,13 @@ then users_commit_hash=$parent_2
 else users_commit_hash=$parent_1
 fi
 
+echo "User's commit was ${users_commit_hash}"
+
 distance_to_sylvanly=$( git log ${users_commit_hash}..${sylvanly_commit_hash} --oneline | wc -l )
 distance_to_sealed=$( git log ${users_commit_hash}..${sealed_commit_hash} --oneline | wc -l )
+
+echo "Distance to sylvanly: ${distance_to_sylvanly}"
+echo "Distance to sealed: ${distance_to_sealed}"
 
 if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our history
     if [[ $distance_to_sylvanly -eq 1 ]]
