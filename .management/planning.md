@@ -125,6 +125,10 @@ The next challenge is two-fold: the 🚩 is the tag 2 commits before this branch
 * figure out how to get tags `git fetch --tags`
 * figure out how to look at tags (`git log --decorate=full`)
 
+#### Status
+
+* Happy flow ✅
+
 ### 8 `nicenist-golp-goback`
 
 In this branch there is a `dontreadme.sh` script which Travis runs and fails.
@@ -132,6 +136,10 @@ In this branch there is a `dontreadme.sh` script which Travis runs and fails.
 In a different fork of the repo, a file exists which causes this script to pass. We need to add that repo as a remote (`git remote add https://github.com/OtherUser/make-git-better remote2`) and merge changes from `remote2/nicenist-golp-goback` branch into `nicenist-golp-goback`.
 
 Travis will give 🚩 if the script passes in the PR.
+
+#### Status
+
+* TODO, currently this is the win stage.
 
 ### 9 `premove-refile-misnomer`
 
