@@ -20,6 +20,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 5](#stage-5)
     - [Stage 6](#stage-6)
     - [Stage 7](#stage-7)
+    - [Stage 8](#stage-8)
   - [License](#license)
 
 ## Directions
@@ -61,17 +62,19 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 7
 
-![Fight for the users](https://media.giphy.com/media/srFZVFZhCv0oE/giphy.gif)
+🚩
 
-> RINZLER: `I FIGHT FOR THE USERS!`
+### Stage 8
+
+![Jeffy boy](https://media.giphy.com/media/dLh1FNaUuPxSw/giphy.gif)
+
+> Hi, Sam.
 >
-> ---
->
-> Yes! Rinzler is on our side! He took out Clu, and he hid the next flag somewhere only **you** can see it.
->
-> The next flag is the _tag_ of the commit that's the current branch's _grandparent_ (2 commits back from now). Find it, and you'll get closer to finding me.
->
-> Good luck Sam. I'm proud of you.
+> Thanks.
+
+You win! 🏆🎉
+
+Please checkout `master`, create a branch with your name, leave your feedback in the `.management/feedback` folder and create a PR to my main repo so I'll keep improving this!
 
 ## License
 

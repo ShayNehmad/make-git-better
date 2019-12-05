@@ -42,49 +42,6 @@ function echo_parents_amount {
 }
 
 printaline
-
-# Check if the script itself ran successfully.
-python ENCOM/login.py CLU
-login_exit_code=$?
-if [ $login_exit_code -ne 0 ];
-then bad "Login failed...";
-fi
-
-git fetch --tags -q
-flamenco_commit_hash=$( echo_tag_commit_hash flamenco-wens-violer-tag )
-
-parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
-parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
-
-echo "Let's look at the log..."
-git log --oneline --graph -n 10 --decorate
-
-echo "parent 1 hash: " $parent_1
-echo "parent 2 hash: " $parent_2
-
-# which parent is the user's commit? 
-users_commit_hash=""
-if [[ $parent_1 = $flamenco_commit_hash ]] # parent1 is NOT the user's commit
-then users_commit_hash=$parent_2
-else users_commit_hash=$parent_1
-fi
-
-echo "User's commit was ${users_commit_hash}"
-
-distance_to_flamenco=$( git rev-list --count ${flamenco_commit_hash}..${users_commit_hash} )
-
-echo "Distance to flamenco: ${distance_to_flamenco}"
-
-if [[ distance_to_flamenco -ne 1 ]]
-then
-    bad "Should solve this using only one commit!"
-fi
-
-rinz_ver_commit_hash=$( echo_tag_commit_hash v1.0.1104001 )
-if [[ $rinz_ver_commit_hash != $users_commit_hash ]]
-then
-    bad "Didn't find version tag!"
-fi
-
-flag "jigman-poppel-purl"
+flag "you-win"
+printaline
 exit 0
