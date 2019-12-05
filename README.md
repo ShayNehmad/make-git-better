@@ -15,6 +15,8 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
   - [Stages](#stages)
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
+    - [Stage 3](#stage-3)
+    - [Stage 4](#stage-4)
   - [License](#license)
 
 ## Directions
@@ -32,16 +34,31 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 1
 
-Your first challange is to:
-
-1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone it to your local development machine
-3. Checkout the `start_here` branch
-4. Read me again to unlock the next stage 😉
+🚩
 
 ### Stage 2
 
-_WIP in the `start_here` branch_...
+🚩
+
+### Stage 3
+
+🚩
+
+### Stage 4
+
+![Bad guy](https://media.giphy.com/media/RDxVJyQalYa2I/giphy.gif)
+
+> `WELCOME TO ENCOM NETWORK.`
+>
+> `CLU HAS BEEN DISPACTHED TO YOUR LOCATION FOR IMMEDIATE DESTRUCTION UNTIL SECONDARY LOGIN SCRIPT IS EXECUTED SUCCESSFULLY`
+>
+> ---
+>
+> Sam. Thought I lost you there for a second. Good job so far, but we don't have much time to waste. CLU is talking about ENCOM's secondary login script (under `ENCOM/2fa.py`).
+>
+> You know what to do. Good luck.
+
+NOTE: _Remember, to solve this you need to use only git commands, don't edit scripts manually._
 
 ## License
 
