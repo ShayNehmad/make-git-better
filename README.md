@@ -19,6 +19,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 4](#stage-4)
     - [Stage 5](#stage-5)
     - [Stage 6](#stage-6)
+    - [Stage 7](#stage-7)
   - [License](#license)
 
 ## Directions
@@ -56,24 +57,21 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 6
 
-![Rinzler](https://media.giphy.com/media/mHbb1vSYzroME/giphy.gif)
+🚩
 
-> ANNOUNCER: `SAM FLYNN vs. RINZLER!`
->
-> RINZLER: `INDICATE YOUR VERSION OR PREPARE FOR DESTRUCTION`
+### Stage 7
+
+![Fight for the users](https://media.giphy.com/media/srFZVFZhCv0oE/giphy.gif)
+
+> RINZLER: `I FIGHT FOR THE USERS!`
 >
 > ---
 >
-> Oh no Sam... You're up against Rinzler now. Try to hit him back!
-
-![Rinzler flip](https://media.giphy.com/media/C2YV0deIejic8/giphy.gif)
-
-> It's of no use, he's too fast! But listen: instead of fighting him, Rinzler can be our ally. To get him on our side, you'll need to do the following:
+> Yes! Rinzler is on our side! He took out Clu, and he hid the next flag somewhere only **you** can see it.
 >
-> - Look at the `ENCOM/login.py` file again. I've added an attempt to `activate_rinzler`, but something's not working! Fix the `activate_rinzler` function.
-> - Then, Rinzler will check that the change happened in a correct version, so _tag_ your version as `v1.0.1104001`. Make sure to use a lightweight tag and not an annotated tag.
+> The next flag is the _tag_ of the commit that's the current branch's _grandparent_ (2 commits back from now). Find it, and you'll get closer to finding me.
 >
-> We're very close, Sam... I'm counting on you.
+> Good luck Sam. I'm proud of you.
 
 ## License
 
