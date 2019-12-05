@@ -62,7 +62,7 @@ fi
 
 # Check if the correct parent is a merge commit
 git fetch --tags -q
-rollinia_commit_hash=$( echo_tag_commit_hash rollinia-flints-lut-tag )
+ethers_commit_hash=$( echo_tag_commit_hash ethers-kalongs-asylum-tag )
 parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
 parent_1_parents_amount=$( echo_parents_amount ${parent_1} )
 parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
@@ -74,9 +74,9 @@ echo "parent 2 hash: " $parent_2
 echo "Let's look at the log..."
 git log --oneline --graph --decorate -n 4
 
-if [ $parent_1 != $rollinia_commit_hash -a is_merge_commit $parent_1 ];
+if [ $parent_1 != $ethers_commit_hash -a is_merge_commit $parent_1 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-elif [ $parent_2 != $rollinia_commit_hash -a is_merge_commit $parent_2 ];
+elif [ $parent_2 != $ethers_commit_hash -a is_merge_commit $parent_2 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
 
