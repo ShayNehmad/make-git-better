@@ -54,7 +54,7 @@ printaline
 echo "Testing ENCOM basic access script."
 
 # Check if the script itself ran successfully.
-python ENCOM/login.py
+python ENCOM/login.py CLU
 login_exit_code=$?
 if [ $login_exit_code -ne 0 ];
 then bad "Login failed...";
@@ -68,7 +68,7 @@ parent_1_parents_amount=$( echo_parents_amount ${parent_1} )
 parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
 parent_2_parents_amount=$( echo_parents_amount ${parent_2} )
 
-echo "parent 1 hash: " $parent_1 
+echo "parent 1 hash: " $parent_1
 echo "parent 2 hash: " $parent_2
 
 echo "Let's look at the log..."
@@ -80,5 +80,5 @@ elif [ $parent_2 != $rollinia_commit_hash -a is_merge_commit $parent_2 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
 
-flag "ethers-kalongs-asylum"
+flag "sylvanly-narrower-oxboy"
 exit 0
