@@ -72,6 +72,7 @@ For how to use a specific command you always have `git help`. For a good explana
 > The next flag is the _tag_ of the commit that's the current branch's _grandparent_ (2 commits back from now). Find it, and you'll get closer to finding me.
 >
 > Good luck Sam. I'm proud of you.
+> 
 
 ## License
 
