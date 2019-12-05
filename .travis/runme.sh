@@ -51,7 +51,7 @@ then bad "Login failed...";
 fi
 
 git fetch --tags -q
-flamenco_commit_hash=$( echo_tag_commit_hash flamenco-narrower-oxboy-tag )
+flamenco_commit_hash=$( echo_tag_commit_hash flamenco-wens-violer-tag )
 
 parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
 parent_2=$( git log -1 | head -2 | tail -1 | awk '{ print $3 }' )
