@@ -41,15 +41,6 @@ function echo_parents_amount {
     echo $( git cat-file -p $1 | grep parent | wc -l )
 }
 
-function is_merge_commit {
-    if [ echo_parents_amount $1 -eq 2 ];
-    then
-        true;
-    else
-        false;
-    fi
-}
-
 printaline
 echo "Testing ENCOM basic access script."
 
@@ -74,9 +65,9 @@ echo "parent 2 hash: " $parent_2
 echo "Let's look at the log..."
 git log --oneline --graph --decorate -n 4
 
-if [ $parent_1 != $rollinia_commit_hash -a is_merge_commit $parent_1 ];
+if [ $parent_1 != $rollinia_commit_hash -a $parent_1_parents_amount -eq 1 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-elif [ $parent_2 != $rollinia_commit_hash -a is_merge_commit $parent_2 ];
+elif [ $parent_2 != $rollinia_commit_hash -a $parent_2_parents_amount -eq 1 ];
 then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
 
