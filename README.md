@@ -18,6 +18,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 3](#stage-3)
     - [Stage 4](#stage-4)
     - [Stage 5](#stage-5)
+    - [Stage 6](#stage-6)
   - [License](#license)
 
 ## Directions
@@ -51,21 +52,28 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 5
 
-![End of Club](https://i.pinimg.com/originals/62/31/af/6231af2773ebe609d7f002ad65c320df.jpg)
+🚩
 
-> `Oh, I see you've successfully logged in. Welcome to my club - the *End of Line* club! Please enjoy a drink. My name is Castor, the owner of this club. For the right price, I can point you in the right direction... 😉`
+### Stage 6
+
+![Rinzler](https://media.giphy.com/media/mHbb1vSYzroME/giphy.gif)
+
+> ANNOUNCER: `SAM FLYNN vs. RINZLER!`
 >
-> `However, some branches in this network are watched by ENCOM. I won't tell you the flag when talking in these branches... But I'll tell you everything else you need to know.`
+> RINZLER: `INDICATE YOUR VERSION OR PREPARE FOR DESTRUCTION`
 >
 > ---
 >
-> Good work, Sam! You've logged into the system, and Clu is off our track... For now.
+> Oh no Sam... You're up against Rinzler now. Try to hit him back!
+
+![Rinzler flip](https://media.giphy.com/media/C2YV0deIejic8/giphy.gif)
+
+> It's of no use, he's too fast! But listen: instead of fighting him, Rinzler can be our ally. To get him on our side, you'll need to do the following:
 >
-> Now you have to convince Castor to reveal where's the next step. All we need is for the `ENCOM/convince_castor.sh` script to offer the right price. The problem with Castor is that he's very fickle. He likes to _revert_ his opinion all the time. You'll have to see what he tells you to do...
+> - Look at the `ENCOM/login.py` file again. I've added an attempt to `activate_rinzler`, but something's not working! Fix the `activate_rinzler` function.
+> - Then, Rinzler will check that the change happened in a correct version, so _tag_ your version as `v1.0.1104001`. Make sure to use a lightweight tag and not an annotated tag.
 >
-> In this scenario, you can think of `sealed-updrink-kashyapa` as our `master` branch, and `sylvanly-narrower-oxboy` as our `dev` branch. We'll have to make and test our changes (according to Castor's requests) on the `dev` branch (meaning the `sylvanly-narrower-oxboy` branch), but at some point we'll have to "release" our changes to the `master` branch (meaning the `sealed-updrink-kashyapa` branch). Otherwise, Castor won't do business with us!
->
-> Start by offering him *66*. While on the `sylvanly-narrower-oxboy` branch, set a variable in `ENCOM/convince_castor.sh`) to 66, create a pull request, and see what he tells you to do.
+> We're very close, Sam... I'm counting on you.
 
 ## License
 

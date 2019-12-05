@@ -4,7 +4,7 @@
 import sys
 
 from twofa import twofa
-
+import rinzler
 
 def main():
     print("Trying to log in...")
@@ -48,6 +48,9 @@ def login(password):
 
     print(prompt)
     print("\nLOGIN SUCCESSFUL\n")
+
+    rinzler.activate_rinzler()
+    print("Rinzler activated.")
 
 
 if __name__ == "__main__":
