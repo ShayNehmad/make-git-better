@@ -103,6 +103,11 @@ Then we'll use rebase (on `sealed-updrink-kashyapa`) instead of merge to clean t
 * Only one commit in `sealed-updrink-kashyapa..sylvanly-narrower-oxboy`
 * Script passes
 
+#### Status
+
+* Happy flow ✅
+* Edge cases ⏹ Pushing a merge instead of a rebase, other cases
+
 ### 6 `flamenco-wens-violer`
 
 Create a tag named `v1.2.3` and push it. Travis checks for the existence of the tag (and a match on the known commit hash) and 🚩.
