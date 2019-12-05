@@ -15,6 +15,11 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
   - [Stages](#stages)
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
+    - [Stage 3](#stage-3)
+    - [Stage 4](#stage-4)
+    - [Stage 5](#stage-5)
+    - [Stage 6](#stage-6)
+    - [Stage 7](#stage-7)
   - [License](#license)
 
 ## Directions
@@ -32,16 +37,41 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 1
 
-Your first challange is to:
-
-1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone it to your local development machine
-3. Checkout the `start_here` branch
-4. Read me again to unlock the next stage 😉
+🚩
 
 ### Stage 2
 
-_WIP in the `start_here` branch_...
+🚩
+
+### Stage 3
+
+🚩
+
+### Stage 4
+
+🚩
+
+### Stage 5
+
+🚩
+
+### Stage 6
+
+🚩
+
+### Stage 7
+
+![Fight for the users](https://media.giphy.com/media/srFZVFZhCv0oE/giphy.gif)
+
+> RINZLER: `I FIGHT FOR THE USERS!`
+>
+> ---
+>
+> Yes! Rinzler is on our side! He took out Clu, and he hid the next flag somewhere only **you** can see it.
+>
+> The next flag is the _tag_ of the commit that's the current branch's _grandparent_ (2 commits back from now). Find it, and you'll get closer to finding me.
+>
+> Good luck Sam. I'm proud of you.
 
 ## License
 
