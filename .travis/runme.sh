@@ -79,7 +79,7 @@ fi
 
 echo "User's commit was ${users_commit_hash}"
 
-distance_to_sylvanly=$( git rev-list --count ${sylvanly_commit_hash}..${users_commit_hash} --oneline | wc -l )
+distance_to_sylvanly=$( git rev-list --count ${sylvanly_commit_hash}..${users_commit_hash} )
 
 echo "Distance to sylvanly: ${distance_to_sylvanly}"
 
