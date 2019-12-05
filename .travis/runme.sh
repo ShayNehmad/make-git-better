@@ -116,6 +116,7 @@ then
         else 
             bad "CASTOR SAYS: Please offer me 66, and make it the THIRD offer (in the 3rd commit)!"
         fi
+    fi
 else  # After rebase or merge, since sealed is in our history
     echo "CASTOR SAYS: Looks like we're after the rebase."
     if [[ $( echo_parents_amount ${users_commit_hash} ) -eq 2 ]]
