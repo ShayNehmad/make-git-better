@@ -71,7 +71,7 @@ then
 fi
 
 echo "checking p2"
-if [[ $parent_2 != $ethers_commit_hash ]] && [[ $(echo_parents_amount $parent_1) -eq 1 ]]
+if [[ $parent_2 != $ethers_commit_hash ]] && [[ $(echo_parents_amount $parent_2) -eq 1 ]]
 then 
     bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
