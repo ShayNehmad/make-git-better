@@ -3,15 +3,20 @@
 ### AUTHOR: Ed Dillinger
 import sys
 
+from twofa import twofa
+
+
 def main():
     print("Trying to log in...")
     try:
-        login()
-    except:
+        login(password=sys.argv[1])
+    except Exception as e:
+        print("Login error: " + str(e))
         print("Something went wrong. This incident has been reported to ENCOM security >:(")
         sys.exit(1)
 
-def login():
+
+def login(password):
     prompt = """::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ,,;;;:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;,,,,,
 ,,;;;::;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;;,,,,
@@ -37,8 +42,13 @@ def login():
 ;;;;;;;;;;;;;;;;;;;;:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;;;;;;;;:::::::;;;;;;;;
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 """
+
+    if not twofa.check_2fa_login(password):
+        raise Exception("2fa didn't work")
+
     print(prompt)
-    # TODO: I think I should check credentials here. Well, maybe later... 💤
+    print("\nLOGIN SUCCESSFUL\n")
+
 
 if __name__ == "__main__":
     main()

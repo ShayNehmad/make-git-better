@@ -16,6 +16,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
     - [Stage 3](#stage-3)
+    - [Stage 4](#stage-4)
   - [License](#license)
 
 ## Directions
@@ -41,11 +42,21 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 3
 
-![ENCOM](https://vignette.wikia.nocookie.net/tron/images/0/02/Encom_front.jpg/revision/latest?cb=20100129215524)
+🚩
 
-> Hello, Sam Flynn. I need to you get into _the Grid_; I need you to do it to get me OUT of the Grid. It's a long story, and we'll have to talk more later. Right now, you have to trust me. ENCOM (the bad guys 👿) locked me inside the Grid, and you'll have to find the key to get me out.
+### Stage 4
+
+![Bad guy](https://media.giphy.com/media/RDxVJyQalYa2I/giphy.gif)
+
+> `WELCOME TO ENCOM NETWORK.`
 >
-> For now, I've granted you access to ENCOM's basic login script. It's `ENCOM/login.py`. Try to run it and see what happens. If that doesn't work, read it to figure out what to do!
+> `CLU HAS BEEN DISPACTHED TO YOUR LOCATION FOR IMMEDIATE DESTRUCTION UNTIL SECONDARY LOGIN SCRIPT IS EXECUTED SUCCESSFULLY`
+>
+> ---
+>
+> Sam. Thought I lost you there for a second. Good job so far, but we don't have much time to waste. CLU is talking about ENCOM's secondary login script (under `ENCOM/2fa.py`).
+>
+> You know what to do. Good luck.
 
 NOTE: _Remember, to solve this you need to use only git commands, don't edit scripts manually._
 
