@@ -15,6 +15,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
   - [Stages](#stages)
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
+    - [Stage 3](#stage-3)
   - [License](#license)
 
 ## Directions
@@ -32,16 +33,21 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 1
 
-Your first challange is to:
-
-1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone it to your local development machine
-3. Checkout the `start_here` branch
-4. Read me again to unlock the next stage 😉
+🚩
 
 ### Stage 2
 
-_WIP in the `start_here` branch_...
+🚩
+
+### Stage 3
+
+![ENCOM](https://vignette.wikia.nocookie.net/tron/images/0/02/Encom_front.jpg/revision/latest?cb=20100129215524)
+
+> Hello, Sam Flynn. I need to you get into _the Grid_; I need you to do it to get me OUT of the Grid. It's a long story, and we'll have to talk more later. Right now, you have to trust me. ENCOM (the bad guys 👿) locked me inside the Grid, and you'll have to find the key to get me out.
+>
+> For now, I've granted you access to ENCOM's basic login script. It's `ENCOM/login.py`. Try to run it and see what happens. If that doesn't work, read it to figure out what to do!
+
+NOTE: _Remember, to solve this you need to use only git commands, don't edit scripts manually._
 
 ## License
 
