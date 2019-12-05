@@ -42,11 +42,14 @@ function echo_parents_amount {
 }
 
 function is_merge_commit {
-    if [ echo_parents_amount $1 -eq 2 ];
+    echo "in is merge commit"
+    if [[ echo_parents_amount $1 -eq 2 ]]
     then
-        true;
+        echo "is merge commit"
+        true
     else
-        false;
+        echo "isn't merge commit"
+        false
     fi
 }
 
@@ -72,10 +75,16 @@ echo "parent 2 hash: " $parent_2
 echo "Let's look at the log..."
 git log --oneline --graph --decorate -n 4
 
-if [ $parent_1 != $ethers_commit_hash ] && [ is_merge_commit $parent_1 ];
-then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
-if [ $parent_2 != $ethers_commit_hash ] && [ is_merge_commit $parent_2 ];
-then bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
+echo "checking p1"
+if [[ $parent_1 != $ethers_commit_hash ]] && [[ is_merge_commit $parent_1 ]]
+then 
+    bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again."
+fi
+
+echo "checking p2"
+if [[ $parent_2 != $ethers_commit_hash ]] && [[ is_merge_commit $parent_2 ]]
+then 
+    bad "Your commit isn't a merge commit! You must solve this stage using a merge. Try again.";
 fi
 
 flag "sylvanly-narrower-oxboy"
