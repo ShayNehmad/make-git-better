@@ -95,7 +95,7 @@ if [[ distance_to_sealed -eq 0 ]] # Not after rebase since sealed isn't in our h
         if [[ $castor -eq 66 ]]
             echo "CASTOR SAYS: I see you offer me 66 again! That's great! Now just let me check one more thing..."
             bad "CASTOR SAYS: Your offer is good, but please REBASE your offer on sealed-updrink-kashyapa! 
-            I can't offer you the flag while we're working on the sylvanly-narrower-oxboy branch, that's no way to do business."
+            I can't offer you the flag while we're working on the sylvanly-narrower-oxboy branch, that's no way to do business. This branch is watched by ENCOM!"
         else 
             bad "CASTOR SAYS: Please offer me 66, and make it the THIRD offer (in the 3rd commit)!"
         fi
@@ -105,7 +105,7 @@ else  # After rebase or merge, since sealed is in our history
         bad "CASTOR SAYS: Looks to me like you've used MERGE, and not REBASE! Try again and use rebase this time!"
     else
         if [[ $castor -eq 66 ]]
-            echo "CASTOR SAYS: 66 seems like a good offer, and you rebased correctly. Fine, I'll tell you the next step. Just don't tell CLU about this..."
+            echo "CASTOR SAYS: 66 seems like a good offer, and you rebased correctly on sealed-updrink-kashyapa. Fine, I'll tell you the next step. Just don't tell Clu about this..."
             flag "flamenco-wens-violer"
             exit 0
         fi
