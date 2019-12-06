@@ -77,7 +77,7 @@ def create_and_push_branch(repo, branch_name, file_to_save_dir):
     Creates a branch with the given name and pushes it to the remote repo.
     :param repo: Git repo object.
     :param branch_name: Name of branch to create.
-    :param file_to_save_path: Path of dir of file to save.
+    :param file_to_save_dir: Path of dir of file to save.
     """
     git_cmd = repo.git
     git_cmd.checkout('HEAD', b=branch_name)
@@ -88,7 +88,9 @@ def create_and_push_branch(repo, branch_name, file_to_save_dir):
 
     repo.index.add(file_path)
     repo.index.commit(branch_name)
+    repo.create_tag('{0}-tag'.format(branch_name))
     git_cmd.push(['--set-upstream', 'origin', branch_name])
+    git_cmd.push(['origin', '--tags'])
 
 
 if __name__ == "__main__":
