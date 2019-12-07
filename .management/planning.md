@@ -57,7 +57,9 @@ Covers add (4), commit (5), push (6) and pull requests (7). If you add the 2 req
 #### Status
 
 * Happy flow ✅
-* Edge cases ⏹ Didn't think of any.
+* Edge cases ✅
+* * More than one commit ✅
+* * More then 2 files ✅
 
 ### 3 `rollinia-flints-lut`
 
