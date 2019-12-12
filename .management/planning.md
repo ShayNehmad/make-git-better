@@ -145,4 +145,8 @@ Travis will give 🚩 if the script passes in the PR.
 
 ### 9 `premove-refile-misnomer`
 
+TODO fix a bad merge that has been commited and pushed (with the merge dividers): possibly, rewrite history with `push -f`.
+
+### 10 `broom-tagalong-fumify`
+
 End, `🍰 is a li3` etc.
