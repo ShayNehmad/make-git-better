@@ -66,15 +66,16 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 8
 
-![Jeffy boy](https://media.giphy.com/media/dLh1FNaUuPxSw/giphy.gif)
+![Isomorph](https://media.giphy.com/media/NEEDTOGETTHIS.gif)
 
-> Hi, Sam.
+> S^!t. HERNAME was kidnapped by Clu and I can't find her. We must get HERNAME back if you want to release me from the Grid; The key to `ENCOM/gridlock.sh` is hidden in her genetic code. Only if she will be in `ENCOM/HERNAME.iso` with the correct code, the gridlock will release and we could continue forward.
 >
-> Thanks.
+> ---
+>
+> *EMERGANCY TRANSMISSION RECIEVED*
+>    HERNAME: Sam, I was taken to a different repository altogether! Merge me back! The repo is https://github.com/EncomEnterprises/make-git-better. You'll have to merge changes from the same branch on the remote. 
 
-You win! 🏆🎉
-
-Please checkout `master`, create a branch with your name, leave your feedback in the `.management/feedback` folder and create a PR to my main repo so I'll keep improving this!
+_Note: no need to edit files in this stage, only git commands will suffice._
 
 ## License
 
