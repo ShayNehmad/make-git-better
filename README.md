@@ -37,13 +37,19 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 2
 
-Your challange:
+This stage is just a warm-up and it shouldn't be confusing, difficult, or require any sort of special insight or research. This is basically a test to make sure all your setup is OK. Good luck! 👋
+
+Your challange is:
 
 1. Add 2 files to the root of the repo: `alice.txt` and `bob.txt`.
-2. Commit your changes (should be only one commit!)
-3. Push your changes to your remote repo.
-4. Create a pull request from your_repo/start-here to ShayNehmad/start-here.
-5. Go get your flag from TravisCI, which will test your branch for you.
+2. Commit your changes (should be only one commit!).
+3. Push your changes to *your* remote repo.
+4. Create a pull request from `your_user/make-git-better/start-here` to `ShayNehmad/make-git-better/start-here` on GitHub. [Click on this link for a guide to creating a Pull Request from your fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+5. Go get your flag from TravisCI, which will test your branch for you. TravisCI will give you the flag in the build job log (or tell you why you aren't getting the flag). To get to the job logs:
+    1. Open the Pull Request page on `github.com`.
+    2. Go to the "Checks" tab.
+    3. Look for the TravisCI build, and click on `The build`, which will redirect you to `travis-ci.com`.
+    4. Look at the Job Log.
 
 #### What if I f-ed it up
 
