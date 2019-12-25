@@ -16,6 +16,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
       - [What if I f-ed it up](#what-if-i-f-ed-it-up)
+      - [What do I do with the flag](#what-do-i-do-with-the-flag)
   - [License](#license)
 
 ## Directions
@@ -54,6 +55,10 @@ Your challange is:
 #### What if I f-ed it up
 
 Good! That's a good way to learn. You'll need to figure out how to return things to their original state and start over :)
+
+#### What do I do with the flag
+
+You passed this stage of the CTF. Check out the next stage 👀
 
 ## License
 
