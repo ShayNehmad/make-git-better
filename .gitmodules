@@ -1,3 +1,6 @@
 [submodule ".management/english-words"]
 	path = .management/english-words
 	url = https://github.com/dwyl/english-words.git
+[submodule ".meta"]
+	path = .meta
+	url = https://github.com/ShayNehmad/meta-make-git-better.git
