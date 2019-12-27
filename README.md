@@ -47,7 +47,7 @@ For how to use a specific command you always have `git help`. For a good explana
 >
 > For now, I've granted you access to ENCOM's basic login script. It's located at `ENCOM/login.py`. Try to run it and see what happens. If that doesn't work, try to read it so you can figure out what you can do.
 
-NOTE: _To solve this you need to use only git commands. You can read the login script, but don't edit stuff manually._
+NOTE: _To solve this you need to use only git commands and GitHub pull requests. You can read the login script, but don't edit stuff manually._
 
 ## License
 
