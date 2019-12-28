@@ -50,7 +50,9 @@ if [ $login_exit_code -ne 0 ];
 then bad "Login failed...";
 fi
 
-git fetch --tags -q
+echo "Fetching tags..."
+git fetch --tags
+
 flamenco_commit_hash=$( echo_tag_commit_hash flamenco-wens-violer-tag )
 
 parent_1=$( git log -1 | head -2 | tail -1 | awk '{ print $2 }' )
@@ -80,6 +82,7 @@ then
     bad "Should solve this using only one commit!"
 fi
 
+echo "Trying to find v1.0.1104001 tag..."
 rinz_ver_commit_hash=$( echo_tag_commit_hash v1.0.1104001 )
 if [[ $rinz_ver_commit_hash != $users_commit_hash ]]
 then
