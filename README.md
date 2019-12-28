@@ -54,11 +54,13 @@ For how to use a specific command you always have `git help`. For a good explana
 >
 > ---
 >
-> Sam. Thought I lost you there for a second. Good job so far, but we don't have much time to waste. CLU is talking about ENCOM's secondary login script (under `ENCOM/2fa.py`).
+> Sam. Thought I lost you there for a second. Good job so far, but we don't have much time to waste. CLU is talking about ENCOM's secondary login script (under `ENCOM/twofa/twofa.py`). It's executed by the main login script - they've updated it, it needs a password now. So read the new `ENCOM/login.py` script the two FA script and see what needs to be done.
 >
 > You know what to do. Good luck.
 
-NOTE: _Remember, to solve this you need to use only git commands, don't edit scripts manually._
+NOTE: _Remember, to solve this you need to use only git commands and GitHub pull requests. You shouldn't edit scripts manually unless you are solving a merge conflict._
+
+NOTE #2: _Remember - TravisCI will give you the next flag._
 
 ## License
 
