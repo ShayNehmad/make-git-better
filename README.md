@@ -68,12 +68,13 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ![Rinzler flip](https://media.giphy.com/media/C2YV0deIejic8/giphy.gif)
 
-> It's of no use, he's too fast! But listen: instead of fighting him, Rinzler can be our ally. To get him on our side, you'll need to do the following:
->
-> - Look at the `ENCOM/login.py` file again. I've added an attempt to `activate_rinzler`, but something's not working! Fix the `activate_rinzler` function.
-> - Then, Rinzler will check that the change happened in a correct version, so _tag_ your version as `v1.0.1104001`. Make sure to use a lightweight tag and not an annotated tag.
+> It's of no use, he's too fast! But listen: instead of fighting him, Rinzler can be our ally. To get him on our side, you'll need find his password somewhere in ENCOM's history... They are so careless, they probably left it somewhere.
 >
 > We're very close, Sam... I'm counting on you.
+
+You need to find the password in the history. Read the current commit message using `git log -n 1`.
+
+_Hint:_ [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection).
 
 ## License
 
