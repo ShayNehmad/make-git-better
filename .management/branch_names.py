@@ -85,8 +85,8 @@ def create_and_push_branch(repo, branch_name, file_to_save_dir):
     repo.index.add(file_path)
     repo.index.commit(branch_name)
     repo.create_tag('{0}-tag'.format(branch_name))
-    git_cmd.push(['--set-upstream', 'origin', branch_name])
-    git_cmd.push(['origin', '--tags'])
+    #git_cmd.push(['--set-upstream', 'origin', branch_name])
+    #git_cmd.push(['origin', '--tags'])
 
 
 if __name__ == "__main__":
