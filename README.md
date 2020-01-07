@@ -32,12 +32,14 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 1
 
+READ ALL THE INSTURCTIONS AND ONLY THEN TRY TO SOLVE THE CHALLENGE. This is true for all stages.
+
 Your first challange is to:
 
-1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone it to your local development machine
-3. Checkout the `start_here` branch
-4. Read me again to unlock the next stage 😉
+1. **Fork this repository**. You can do this by pressing the "fork" button on top of this page. To learn more about forking and to make sure you understand it, [read this documentation by GitHub](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
+2. **Clone** your fork to your local development machine. This should look something like `git clone git@github.com:YOUR_USER_HERE/make-git-better.git`.
+3. **Checkout** the `start-here` branch in the local repository you've just cloned. This should look something like `git checkout start-here`.
+4. **Read me again** to unlock the next stage. No more hand-holding 😉
 
 ### Stage 2
 
