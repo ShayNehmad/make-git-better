@@ -21,6 +21,7 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
     - [Stage 6](#stage-6)
     - [Stage 7](#stage-7)
     - [Stage 8](#stage-8)
+    - [Stage 9](#stage-9)
   - [License](#license)
 
 ## Directions
@@ -66,17 +67,19 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 8
 
-![Quorra](https://media.giphy.com/media/7CNpdCLqq65B6/giphy.gif)
+🚩
 
-> S^!t. Quorra was kidnapped by Clu and I can't find her. We must get Quorra back if you want to release me from the Grid; The key to `ENCOM/gridlock.sh` is hidden in her genetic code. Only if she will be in `ENCOM/Quorra.iso` with the correct code, the gridlock will release and we could continue forward.
->
-> ---
->
-> ***EMERGANCY TRANSMISSION RECIEVED***
->
-> _Quorra_: Sam, I was taken to a different repository altogether! Merge me back! This repo has been forked by [EncomEnterprises](https://github.com/EncomEnterprises/make-git-better). You'll have to merge changes from the same branch on the remote.
+### Stage 9
 
-_Note: no need to edit files in this stage, only git commands will suffice._
+![HarderBetterFasterStronger](https://media.giphy.com/media/qTmjKxXDwvK7K/giphy.gif)
+
+You win!
+
+![you win](https://media.giphy.com/media/POH5k3dYNLrqa7SbVa/giphy.gif)
+
+Please create a file with your feedback under `.management/feedback` and open a Pull Request with it.
+
+Thanks for playing!
 
 ## License
 
