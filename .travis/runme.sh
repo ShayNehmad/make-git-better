@@ -42,6 +42,14 @@ function echo_parents_amount {
 }
 
 printaline
-flag "you-win"
+
+chmod +x ENCOM/gridlock.sh
+ENCOM/gridlock.sh
+gridlock_exit_code=$?
+if [ $gridlock_exit_code -ne 0 ];
+then bad "GRID IS LOCKED.";
+fi
 printaline
+
+flag "premove-refile-misnomer"
 exit 0

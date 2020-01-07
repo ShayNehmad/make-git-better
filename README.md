@@ -66,14 +66,15 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 8
 
-![Isomorph](https://media.giphy.com/media/NEEDTOGETTHIS.gif)
+![Quorra](https://media.giphy.com/media/7CNpdCLqq65B6/giphy.gif)
 
-> S^!t. HERNAME was kidnapped by Clu and I can't find her. We must get HERNAME back if you want to release me from the Grid; The key to `ENCOM/gridlock.sh` is hidden in her genetic code. Only if she will be in `ENCOM/HERNAME.iso` with the correct code, the gridlock will release and we could continue forward.
+> S^!t. Quorra was kidnapped by Clu and I can't find her. We must get Quorra back if you want to release me from the Grid; The key to `ENCOM/gridlock.sh` is hidden in her genetic code. Only if she will be in `ENCOM/Quorra.iso` with the correct code, the gridlock will release and we could continue forward.
 >
 > ---
 >
-> *EMERGANCY TRANSMISSION RECIEVED*
->    HERNAME: Sam, I was taken to a different repository altogether! Merge me back! The repo is https://github.com/EncomEnterprises/make-git-better. You'll have to merge changes from the same branch on the remote. 
+> ***EMERGANCY TRANSMISSION RECIEVED***
+>
+> _Quorra_: Sam, I was taken to a different repository altogether! Merge me back! This repo has been forked by [EncomEnterprises](https://github.com/EncomEnterprises/make-git-better). You'll have to merge changes from the same branch on the remote.
 
 _Note: no need to edit files in this stage, only git commands will suffice._
 
