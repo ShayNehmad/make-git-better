@@ -32,8 +32,8 @@ def main():
 
     for branch_name in names_set:
         create_and_push_branch(repo, branch_name, management_dir)
-        print("Pushed {0}, checking out dev".format(branch_name))
-        repo.git.checkout('dev')
+        # print("Pushed {0}, checking out dev".format(branch_name))
+        # repo.git.checkout('dev')
 
     
 def load_words():
