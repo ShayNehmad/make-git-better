@@ -72,7 +72,7 @@ For how to use a specific command you always have `git help`. For a good explana
 >
 > We're very close, Sam... I'm counting on you.
 
-You need to find the password in the history. Read the current commit message using `git log -n 1`.
+You need to find the flag in the history. You don't need to commit any code, create pull requests or checkout anything. To start - read the current commit message (`git log -n1`).
 
 _Hint:_ [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection).
 
