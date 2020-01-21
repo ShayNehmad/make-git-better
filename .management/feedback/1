@@ -1,11 +1,28 @@
 Problems:
 * Don't know how to get to the TravisCI build logs - give instructions
 * If the original repo is changed the forks that are midway are basically f-ed (branch games won't work). So need
-a nuclear option for re-creating the fork (delete all local branches, checkout `start-here`? or delete f-ed branches 
+a nuclear option for re-creating the fork (delete all local branches, checkout `start-here`? or delete f-ed branches
 and recheckout the current stage. Can add a `local_stage` file under management which might even help for other things)
  * git remote -v
  * git remote add https://github.com/ShayNehmad/make-git-better upstream
- * git fetch upstream 
- * delete f-ed local branches 
+ * git fetch upstream
+ * delete f-ed local branches
  * git checkout -b f-ed-branch upstream/f-ed-branch
-* Which branch to create a pull request to? Make it clearer. Should be the same stage probably. 
+* Which branch to create a pull request to? Make it clearer. Should be the same stage probably.
+
+
+Hey, first of all the presentation was awesome and so were the challenges and thank you very much for the effort
+The good stuff:
+* The level of details and understanding of the internals of the objects was awesome, I really enjoyed learning all these stuff and had no idea this is how they work.
+* the active presentation was really good and helped passing the information in a good way, much better than regular boring slides presentation
+* I mostly think that the entire thing was awesome, and the things I think can be good are more things to add and not things to change, the things that do appear awesome
+* The Tron stuff were cool
+* The entire infra for the CTF seemed very well tested, thought through and solid.
+
+Things that can be good in my opinion:
+* Then -> Than :)
+* Don't promote zsh during the presentation, it was weird and off-topic to the actual git stuff
+* I was missing some information on the internals of ref logs and how to handle things that are considered "unrevert-able" like reset --hard
+* I really wish for some more crysis handling parts, like scenarios in which something is fucked and you need to save if (like reset --hard and going to ref logs)
+* the quick passing of the basic stuff wasn't quick enough
+* The challenges did not practice much of the "plumbing" commands and mostly basic commands, I believe the entire ordeal could really be expanded into an awesome (probably much bigger) challenge
