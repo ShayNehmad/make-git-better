@@ -106,3 +106,8 @@ venv.bak/
 # editors
 .vscode/
 .idea/
+
+# vim swp files
+*.swp
+*.swo
+
