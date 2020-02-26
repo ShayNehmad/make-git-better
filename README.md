@@ -71,7 +71,21 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 9
 
-For this stage, you must run the script `setup_stage_9.sh` first.
+**For this stage, you must run the script `setup_stage_9.sh` first!**
+
+You need to add more than 100 files into the `add_files_here` directory, and you can't do it in more than 3 commits. Shouldn't be too hard, should it?
+
+Hint: Here's a quick shell script to create a lot of files in a directory.
+
+```sh
+for x in {4..105} ; do touch somenewfile$x ; done
+```
+
+And a CMD version:
+
+```batch
+for /l %a in (1 1 10) do type nul > "%a.txt"
+```
 
 ## License
 
