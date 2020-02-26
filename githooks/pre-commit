@@ -1,6 +1,6 @@
 how_many_new_files=$(git status -s | grep '^A' | grep add_files_here | wc -l) 
 
-if [[ $how_many_new_files -ne 1 ]]; then
+if [ $how_many_new_files -ne 1 ]; then
 	echo "You're trying to add too many files at once! I only allow one file at a time, but you are trying to add "$how_many_new_files"!"
 	exit 1
 fi
