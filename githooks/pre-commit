@@ -1,3 +1,4 @@
+#!/bin/sh
 how_many_new_files=$(git status -s | grep '^A' | grep add_files_here | wc -l) 
 
 if [ $how_many_new_files -ne 1 ]; then
