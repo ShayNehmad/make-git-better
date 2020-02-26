@@ -88,6 +88,7 @@ if [[ $rinz_ver_commit_hash != $users_commit_hash ]]
 then
     bad "Didn't find version tag!"
 fi
+printaline
 
-flag "jigman-poppel-purl"
+flag "premove-refile-misnomer"
 exit 0
