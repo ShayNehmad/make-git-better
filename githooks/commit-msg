@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ grep -i "git is awesome" $1 ]; then
+	echo "Write 'git is awesome' in your commit message"
+	exit 1
+else
+	echo "I agree; git is awesome!"
+	exit 0
+fi

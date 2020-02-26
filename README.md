@@ -76,15 +76,9 @@ For how to use a specific command you always have `git help`. For a good explana
 
 ### Stage 10
 
-![HarderBetterFasterStronger](https://media.giphy.com/media/qTmjKxXDwvK7K/giphy.gif)
+**For this stage, you must run the script `setup_stage_10.sh` first!**
 
-You win!
-
-![you win](https://media.giphy.com/media/POH5k3dYNLrqa7SbVa/giphy.gif)
-
-Please create a file with your feedback under `.management/feedback` and open a Pull Request with it.
-
-Thanks for playing!
+Try to commit something.
 
 ## License
 
