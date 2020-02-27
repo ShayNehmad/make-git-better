@@ -10,38 +10,80 @@ _Welcome to Shay Nehmad's `git` CTF for Guardicore Labs! 🚩_
 
 - [Work git harder Make git better](#work-git-harder-make-git-better)
   - [ToC](#toc)
-  - [Directions](#directions)
-  - [Reference materials](#reference-materials)
   - [Stages](#stages)
     - [Stage 1](#stage-1)
     - [Stage 2](#stage-2)
+    - [Stage 3](#stage-3)
+    - [Stage 4](#stage-4)
+    - [Stage 5](#stage-5)
+    - [Stage 6](#stage-6)
+    - [Stage 7](#stage-7)
+    - [Stage 8](#stage-8)
+    - [Stage 9](#stage-9)
+    - [Stage 10](#stage-10)
+    - [Stage 11](#stage-11)
+      - [You win](#you-win)
+      - [Here's some stuff you can do now](#heres-some-stuff-you-can-do-now)
   - [License](#license)
-
-## Directions
-
-- Have fun :)
-- Don't look at any hidden files or directories in this repo (unless you're directed to do so). **Specifically, don't look at the `.travis` or `.management` directories or the `.travis.yml` file. THIS WILL RUIN THE CHALLENGE FOR YOU.**
-- This challenge will not require brute-forcing to solve - the solution, once you got it, should be clear.
-- You are encourged to use any tool to solve the challenge. However, CLI is preferred to make sure you understand all the commands - save the GUI for day-to-day work.
-
-## Reference materials
-  
-For how to use a specific command you always have `git help`. For a good explanation of concepts, [git book](https://git-scm.com/book/en/v2) is the place to go.
 
 ## Stages
 
 ### Stage 1
 
-Your first challange is to:
-
-1. [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-2. Clone it to your local development machine
-3. Checkout the `start_here` branch
-4. Read me again to unlock the next stage 😉
+🚩
 
 ### Stage 2
 
-_WIP in the `start_here` branch_...
+🚩
+
+### Stage 3
+
+🚩
+
+### Stage 4
+
+🚩
+
+### Stage 5
+
+🚩
+
+### Stage 6
+
+🚩
+
+### Stage 7
+
+🚩
+
+### Stage 8
+
+🚩
+
+### Stage 9
+
+🚩
+
+### Stage 10
+
+🚩
+
+### Stage 11
+
+![HarderBetterFasterStronger](https://media.giphy.com/media/qTmjKxXDwvK7K/giphy.gif)
+
+#### You win
+
+![you win](https://media.giphy.com/media/POH5k3dYNLrqa7SbVa/giphy.gif)
+
+#### Here's some stuff you can do now
+
+- Tell other people about the CTF, personally and on Social Media. Brag about finishing it! :)
+- Add yourself to the leaderboards (don't forget to open a Pull Request).
+- Create a file with your feedback under `.management/feedback`. You can suggest new levels, or tell me about improvements to current ones.
+- Publish a writeup.
+
+**Thanks for playing!**
 
 ## License
 
