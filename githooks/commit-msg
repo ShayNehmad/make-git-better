@@ -1,6 +1,11 @@
 #!/bin/sh
 
-if [ grep -i "git is awesome" $1 ]; then
+echo $1
+cat $1
+
+how_many=$(grep -i "git is awesome" $1 | wc -l)
+
+if [ how_many == 0 ]; then
 	echo "Write 'git is awesome' in your commit message"
 	exit 1
 else
