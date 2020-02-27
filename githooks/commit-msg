@@ -1,15 +1,14 @@
 #!/bin/sh
 
-echo $1
-cat $1
-
 how_many=$(grep -i "git is awesome" $1 | wc -l)
 
-if [ how_many == 0 ]; then
-	echo "Write 'git is awesome' in your commit message"
+if [ $how_many == 0 ]; then
+	echo "Write 'git is awesome' in your commit message, and try again."
 	exit 1
 else
-	echo "I agree; git is awesome!"
+	echo "I agree; git is awesome! :)"
+	echo
 	echo "The flag is broom-tagalong-fumify"
+	echo
 	exit 0
 fi
