@@ -15,9 +15,9 @@ def check_2fa_login(password):
     # We need to check twofa_password from the environment variable 
     # against the user-provided password. 
     # Also, I heard that using hashes is secure - let's hash both of them before comparing them!
-
-    # TODO Need to merge the rest of the work over from `grubbery-unopenly-unhushed`. But I'm just so lazy... 💤
     import hashlib
     m = hashlib.sha512()
     m.update(twofa_password.encode())
-    return m.hexdigest() == "PUT_HASH_OF_PASSWORD_HERE"
+    n = hashlib.sha512()
+    n.update(password.encode())
+    return m.hexdigest() == n.hexdigest()
