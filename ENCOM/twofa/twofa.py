@@ -4,8 +4,6 @@ import os
 
 def check_2fa_login(password):
     """
-    Implemented by Ed Dillinger. 
-
     I don't know much about cryptography, or security...
     But I heard hashing was good. Right? 🤔
     """
@@ -16,8 +14,10 @@ def check_2fa_login(password):
     # against the user-provided password. 
     # Also, I heard that using hashes is secure - let's hash both of them before comparing them!
 
-    # TODO Need to merge the rest of the work over from `grubbery-unopenly-unhushed`. But I'm just so lazy... 💤
     import hashlib
     m = hashlib.sha512()
     m.update(twofa_password.encode())
-    return m.hexdigest() == "PUT_HASH_OF_PASSWORD_HERE"
+    # We need to check the 2FA password from the environment variable against the user-provided password. Also, I heard that using hashes is secure - let's do that!
+    n = hashlib.sha512()
+    n.update(password.encode())
+    return m.hexdigest() == n.hexdigest()
