@@ -11,4 +11,4 @@ def check_2fa_login(password):
     import hashlib
     m = hashlib.sha512()
     m.update(twofa_password.encode())
-    return m.hexdigest() == "PUT_HASH_OF_PASSWORD_HERE"
+    return m.hexdigest() == "080bd3da15960d63d5371451b69695ef811ad5aad97237091e052081fcb63d899e3748900857e3ef292e9a2036190e4b931c384febbddd6baabddd25ae84ea89"
