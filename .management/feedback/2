@@ -1,0 +1,6 @@
+I really enjoyed doing this and learned quite a bit :)
+
+* On the final stage, it would help if you linked to previous stages. I want to write some feedback and can't remember all the stage names.
+* Stage 2 - The wording "Check out the next stage" threw me off. I thought I had to find something in "staging" and didn't realise at first that the flag was the branch name. *facepalm emoji* 
+* Stage 3 - It took me a while to realise that here too I need to do a pull request.
+* FInal 10 - I copied the commit-msg.sample to the working directory. It was a complete guess but it worked. Wasn't sure if that was what I was supposed to do.
