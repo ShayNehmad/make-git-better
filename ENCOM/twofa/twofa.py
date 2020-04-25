@@ -20,4 +20,6 @@ def check_2fa_login(password):
     import hashlib
     m = hashlib.sha512()
     m.update(twofa_password.encode())
-    return m.hexdigest() == "PUT_HASH_OF_PASSWORD_HERE"
+    n = hashlib.sha512()
+    n.update(password.encode())
+    return m.hexdigest() == n.hexdigest()
