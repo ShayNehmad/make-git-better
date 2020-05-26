@@ -16,3 +16,5 @@ Good job, you finished the CTF! 🚩🏆
 - [Liad Mordekoviz](https://github.com/liadmord)
 - [Yair Shemla](https://github.com/yairshemla)
 - [Peleg Wainberg](https://github.com/pelegwain)
+- [Benji Tobias](https://github.com/benjitobias)
+- [Stiv Kupchik](https://github.com/kupsul)
