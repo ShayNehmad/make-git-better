@@ -1,3 +1,8 @@
+# ⚠ DEPRECATED ⚠
+
+Check out version 2.0 at [my site](https://mrnice.dev/).
+
+
 # Work git harder Make git better
 
 > Do git faster | Makes us stronger | More then ever | Hour after | Our work is | Never over
