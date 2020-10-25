@@ -1,6 +1,22 @@
+Peleg Wainberg - 
+
+Existing stages suggestions:
+Stage 5: Changed to 66, opened a PR to ShayNehmad/sylvanly-narrower-oxboy, travis gave me the flag. Felt wrong so I re-did the stage.
+Stage 7: The face that only part of the tag name is the next stage's branch name was unclear.  Also, I think it's too "passive" - it's very clear that I only need to find the tag name of a given commit.
+Stage 9: the loop adds 102 files lol. Also, the hook will always return 1 - was that on purpose?
+Stage 10: I didn't even have to read the hook to pass. Maybe make people write a hook and validate it?
+
+Other Suggestions: 
+- Add a git bisect stage! it can be cool (and not that hard). Easy part can be manually finding the bad commit, Advanced part can be writing a script that finds it and letting git bisect to the work for you!
+- Add people to the leaderboard automatically!
+- Add a more advanced rebase exercises.
+- Add stages for squash, ammend, reset (different types). Maybe something for stash, restore, clean
+ 
+
 I really enjoyed doing this and learned quite a bit :)
 
 * On the final stage, it would help if you linked to previous stages. I want to write some feedback and can't remember all the stage names.
 * Stage 2 - The wording "Check out the next stage" threw me off. I thought I had to find something in "staging" and didn't realise at first that the flag was the branch name. *facepalm emoji* 
 * Stage 3 - It took me a while to realise that here too I need to do a pull request.
 * FInal 10 - I copied the commit-msg.sample to the working directory. It was a complete guess but it worked. Wasn't sure if that was what I was supposed to do.
+
